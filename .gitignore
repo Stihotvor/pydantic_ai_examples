@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*/bin/activate
+*/lib/python*/site-packages/
+
+# Distribution and packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Editors
+# VSCode
+.vscode/
+# PyCharm
+.idea/
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+.Trashes
+Thumbs.db
+ehthumbs.db
+*.bak
+*.swp
+*~
+.directory
