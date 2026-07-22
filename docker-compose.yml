@@ -1,0 +1,28 @@
+services:
+  researcher:
+    build: .
+    command: uvicorn agents.researcher.agent:app --host 0.0.0.0 --port 8000
+    ports: [ "9801:8000" ]
+    env_file: .env
+    environment:
+      - MODEL_STRING=openai:gpt-4o
+  extractor:
+    build: .
+    command: uvicorn agents.extractor.agent:app --host 0.0.0.0 --port 8000
+    ports: [ "9802:8000" ]
+    env_file: .env
+  flight_booker:
+    build: .
+    command: uvicorn agents.flight_booker.agent:app --host 0.0.0.0 --port 8000
+    ports: [ "9803:8000" ]
+    env_file: .env
+  rag_qa:
+    build: .
+    command: uvicorn agents.rag_qa.agent:app --host 0.0.0.0 --port 8000
+    ports: [ "9804:8000" ]
+    env_file: .env
+  decision:
+    build: .
+    command: uvicorn agents.decision.agent:app --host 0.0.0.0 --port 8000
+    ports: [ "9805:8000" ]
+    env_file: .env

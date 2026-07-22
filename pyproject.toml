@@ -2,4 +2,8 @@
 name = "pydantic-ai-examples"
 version = "0.1.0"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pydantic-ai",
+    "uvicorn[standard]",
+    "httpx"
+]
