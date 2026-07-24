@@ -1,6 +1,5 @@
 # Python
 __pycache__/
-*.pyc
 *.pyo
 *.pyd
 .Python
@@ -10,8 +9,10 @@ venv/
 */bin/activate
 */lib/python*/site-packages/
 
+# Environment
+.env
+
 # Distribution and packaging
-.Python
 build/
 dist/
 *.egg-info/
